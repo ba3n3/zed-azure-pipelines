@@ -1,5 +1,5 @@
 [package]
-name = "zed-docker-compose"
+name = "zed-azure-pipelines"
 version = "0.1.0"
 edition = "2021"
 

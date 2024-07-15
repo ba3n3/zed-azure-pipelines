@@ -1,4 +1,4 @@
-# zed-docker-compose
+# zed-azure-pipelines
 
 A [Zed](https://zed.dev) extension providing language server support for
 Docker Compose files.
@@ -9,4 +9,4 @@ Install from the integrated Zed extensions store.
 
 ## Credits
 
-Implemented using [microsoft/compose-language-service](https://github.com/microsoft/compose-language-service).
+Implemented using [microsoft/azure-pipelines-language-server](https://github.com/microsoft/azure-pipelines-language-server).

@@ -1,14 +1,14 @@
 use zed_extension_api as zed;
 
-const SERVER_PATH: &str = "node_modules/.bin/docker-compose-langserver";
-const PACKAGE_NAME: &str = "@microsoft/compose-language-service";
+const SERVER_PATH: &str = "node_modules/.bin/azure-pipelines-language-server";
+const PACKAGE_NAME: &str = "@microsoft/azure-pipelines-language-server";
 
 #[derive(Default)]
-struct DockerComposeExtension {
+struct AzurePipelinesExtension {
     cached: bool,
 }
 
-impl DockerComposeExtension {
+impl AzurePipelinesExtension {
     fn server_path(&self) -> String {
         std::env::current_dir()
             .unwrap()
@@ -64,7 +64,7 @@ impl DockerComposeExtension {
     }
 }
 
-impl zed::Extension for DockerComposeExtension {
+impl zed::Extension for AzurePipelinesExtension {
     fn new() -> Self
     where
         Self: Sized,
@@ -87,4 +87,4 @@ impl zed::Extension for DockerComposeExtension {
     }
 }
 
-zed::register_extension!(DockerComposeExtension);
+zed::register_extension!(AzurePipelinesExtension);

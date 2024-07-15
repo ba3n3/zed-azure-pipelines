@@ -1,11 +1,11 @@
-id = "docker-compose"
-name = "Docker Compose"
+id = "azure-pipelines"
+name = "Azure pipelines"
 version = "0.1.0"
 schema_version = 1
-authors = ["eth0net <eth0net@pm.me>"]
-description = "Syntax highlighting for Docker Compose files"
-repository = "https://github.com/eth0net/zed-docker-compose"
+authors = ["ba3n3 <null@github.com>"]
+description = "Syntax highlighting for Azure Pipeline files"
+repository = "https://github.com/ba3n3/zed-azure-pipelines"
 
-[language_servers.docker-compose]
-name = "Docker Compose Language Server"
+[language_servers.azure-pipelines]
+name = "Azure Pipelines Language Server"
 language = "YAML"
